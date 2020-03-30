@@ -11,8 +11,8 @@ this tool is for you...
 
 ## usage
 * git clone git@github.com:magnum/rdbsync.git
-* copy rdbsync.example.yml from the cloned dir your web project directory, save as rdbsync.yml and edit accordingly
-* use 
+* copy **rdbsync.example.yml** from the cloned dir your web project directory, save as **rdbsync.yml** and edit accordingly
+* use it
 
 ### PULL database, from remote to local
 `ruby rdbsync pull`
