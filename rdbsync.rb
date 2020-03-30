@@ -43,7 +43,7 @@ end
 
 def local_import
   config_local = CONFIG[:local]
-  import_command = "mysql -h #{config_local[:db][:host]} -u #{config_local[:db][:username]} #{config_local[:db][:password] ? "" : "-p#{config_local[:db][:password]}"} #{config_local[:db][:name]} < #{DUMP_FILENAME}"
+  import_command = "mysql -h #{config_local[:db][:host]} -u #{config_local[:db][:username]} #{config_local[:db][:password] ? "-p#{config_local[:db][:password]}" : ""} #{config_local[:db][:name]} < #{DUMP_FILENAME}"
   import_result = %x[ #{import_command} ]
   puts "imported into db #{config_local[:db][:name]}"
 end
