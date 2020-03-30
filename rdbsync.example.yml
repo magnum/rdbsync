@@ -1,0 +1,20 @@
+config:
+  local:
+    db:
+      host: 127.0.0.1
+      username: username
+      password: password
+      name: database_name
+
+  remote:
+    url: http://example.com
+    db:
+      host: 127.0.0.1
+      username: username
+      password: password
+      name: database_name
+    ftp:
+      host: example.com
+      username: username
+      password: password
+      dir: public_html
