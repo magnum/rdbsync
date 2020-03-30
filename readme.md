@@ -16,10 +16,13 @@ Right now, it only implements download and local restore of db (get)
 * copy rdbsync.example.yml from the cloned dir your web project directory, save as rdbsync.yml and edit accordingly
 * use it
 
-`ruby $HOME/projects/rdbsync/rdbsync`
+### PULL database (from remote to local)
+`ruby $HOME/projects/rdbsync/rdbsync pull`
+
+### PUSH database (from local to remote)
+`ruby $HOME/projects/rdbsync/rdbsync push`
 
 ## next steps
-* local dump and remote restore (put)
 * testing routine
 
 Help or suggestions are appreciated 
