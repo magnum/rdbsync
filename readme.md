@@ -8,6 +8,7 @@ if you're tired of one of these:
 * launch local mysql client app or run commands to restore db, and do it repetitively
 
 this tool is for you...
+
 Right now, it only implements download and local restore of db (get)
 
 ## usage
