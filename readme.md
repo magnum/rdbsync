@@ -9,18 +9,23 @@ It's common to keep local db in sync w/ production one, so if you're tired of on
 this supposed "hassle free" tool is for you...
 
 ## usage
-* git clone git@github.com:magnum/rdbsync.git
+* clone repo with `git clone git@github.com:magnum/rdbsync.git`
 * copy **rdbsync.example.yml** from the git cloned dir into your web project(s) directory, save it as **rdbsync.yml** and edit it accordingly to your project online **url**, **local** and **remote db credentials**
 * use it
 
 ### PULL database, from remote to local
-`ruby rdbsync pull`
+`ruby rdbsync.rb pull`
 
 ### PUSH database, from local to remote
-`ruby rdbsync push`
+`ruby rdbsync.rb push`
 
 Put a **rdbsync.yml** config file in every project you want to use with **rdbsync**. From inside your web project root, call rdbsync.rb specifying the its path, ie:  
-`ruby $HOME/projects/rdbsync/rdbsync push`
+`ruby $HOME/projects/rdbsync/rdbsync.rb push`
+
+If you want, you can make it executable with `chmod +x rdbsync.rb` and call it directly
+
+`rdbsync.rb push`
+
 
 ## next steps
 * testing routine
