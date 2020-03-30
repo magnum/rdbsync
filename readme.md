@@ -9,7 +9,7 @@ It's common to keep local db in sync w/ production one, so if you're tired of on
 this supposed "hassle free" tool is for you...
 
 ## usage
-* git clone git@github.com:magnum/rdbsync.git
+* clone repo with `git clone git@github.com:magnum/rdbsync.git`
 * copy **rdbsync.example.yml** from the git cloned dir into your web project(s) directory, save it as **rdbsync.yml** and edit it accordingly to your project online **url**, **local** and **remote db credentials**
 * use it
 
