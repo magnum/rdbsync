@@ -10,13 +10,13 @@ this supposed "hassle free" tool is for you...
 
 ## usage
 * clone repo with `git clone git@github.com:magnum/rdbsync.git`
-* copy **rdbsync.example.yml** from the git cloned dir into your web project(s) directory, save it as **rdbsync.yml** and edit it accordingly to your project online **url**, **local** and **remote db credentials**
+* copy **rdbsync.example.yml** from the git cloned dir into your web project(s) directory, save it as **rdbsync.yml** and edit it accordingly to your project online **url**, **local** and **remote db credentials**: it's supposed to be self-explaining
 * use it
 
-### PULL database, from remote to local
+#### PULL database, from remote to local
 `ruby rdbsync.rb pull`
 
-### PUSH database, from local to remote
+#### PUSH database, from local to remote
 `ruby rdbsync.rb push`
 
 Put a **rdbsync.yml** config file in every project you want to use with **rdbsync**. From inside your web project root, call rdbsync.rb specifying the its path, ie:  
