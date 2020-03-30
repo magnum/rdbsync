@@ -13,10 +13,10 @@ this supposed "hassle free" tool is for you...
 * copy **rdbsync.example.yml** from the git cloned dir into your web project(s) directory, save it as **rdbsync.yml** and edit it accordingly to your project online **url**, **local** and **remote db credentials**
 * use it
 
-### PULL database, from remote to local
+#### PULL database, from remote to local
 `ruby rdbsync.rb pull`
 
-### PUSH database, from local to remote
+#### PUSH database, from local to remote
 `ruby rdbsync.rb push`
 
 Put a **rdbsync.yml** config file in every project you want to use with **rdbsync**. From inside your web project root, call rdbsync.rb specifying the its path, ie:  
