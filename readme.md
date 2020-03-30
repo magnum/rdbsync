@@ -14,12 +14,16 @@ Right now, it only implements download and local restore of db (get)
 ## usage
 * git clone git@github.com:magnum/rdbsync.git
 * copy rdbsync.example.yml from the cloned dir your web project directory, save as rdbsync.yml and edit accordingly
-* use it
+* use 
 
-### PULL database (from remote to local)
-`ruby $HOME/projects/rdbsync/rdbsync pull`
+### PULL database, from remote to local
+`ruby rdbsync pull`
 
-### PUSH database (from local to remote)
+### PUSH database, from local to remote
+`ruby rdbsync push`
+
+I suggest you to put a rdbsync.yml in every project you want to use with rdbsync.
+From inside your web project root, call rdbsync.rb specifying the rbdbsync.rb path, ie:  
 `ruby $HOME/projects/rdbsync/rdbsync push`
 
 ## next steps
