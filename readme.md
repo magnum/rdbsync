@@ -1,5 +1,5 @@
 # rdbsync
-## a quick and dirty ruby script to sync db via ftp for (php) web projects
+### a quick and dirty ruby script to sync remote db via ftp for (php) web projects
 
 It's better to keep local db in sync w/ production one
 if you're tired of one of these: 
