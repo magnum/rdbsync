@@ -44,9 +44,7 @@ def remote_action_url(action)
     ":script_filename?action=#{action}&host=:host&username=:username&password=:password&name=:name",
     CONFIG[:remote][:db]
   )
-  url = File.join  CONFIG[:remote][:url], path
-  puts url
-  url
+  File.join  CONFIG[:remote][:url], path
 end
 
 
