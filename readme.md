@@ -10,7 +10,7 @@ this supposed "hassle free" tool is for you...
 
 ## usage
 * git clone git@github.com:magnum/rdbsync.git
-* copy **rdbsync.example.yml** from the cloned dir your web project(s) directory, save as **rdbsync.yml** and edit accordingly
+* copy **rdbsync.example.yml** from the git cloned dir into your web project(s) directory, save it as **rdbsync.yml** and edit it accordingly to your project online **url**, **local** and **remote db credentials**
 * use it
 
 ### PULL database, from remote to local
