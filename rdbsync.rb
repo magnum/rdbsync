@@ -4,10 +4,10 @@ require 'net/ftp'
 require "net/http"
 require 'json'
 
-working_dir = Dir.pwd
+WORKING_DIR = Dir.pwd
 DUMP_FILENAME = "rdbsync.sql"
 SCRIPT_FILENAME = "rdbsync.php"
-CONFIG_PATH = File.join(working_dir, "rdbsync.yml")
+CONFIG_PATH = File.join(WORKING_DIR, "rdbsync.yml")
 CONFIG = YAML::load(File.open(CONFIG_PATH), symbolize_names: true)[:config]
 
 
