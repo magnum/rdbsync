@@ -10,12 +10,13 @@ function mysql_run($command)
     ':dump_filename' => 'rdbsync.sql',
   );
   //$backup_file = 'rsbsync' . date("Y-m-d-H-i-s");
+  $command = strtr($command, $params);
   $result = array(
     'exit_status' => null,
     'output' => null,
+    'command' => $command,
   );
   try {
-    $command = strtr($command, $params);
     exec($command, $output, $exit_status);
     $result['exit_status'] = $exit_status;
     $result['output'] = $output;
@@ -27,12 +28,12 @@ function mysql_run($command)
 
 
 function remote_export(){
-  mysql_run("(mysqldump -h :host -u :username -p:password :name > :dump_filename) 2>&1");
+  mysql_run("(mysqldump -h :host -u :username -p':password' :name > :dump_filename) 2>&1");
 }
 
 
 function remote_import(){
-  mysql_run("mysql -h :host -u :username -p:password :name < :dump_filename");
+  mysql_run("mysql -h :host -u :username -p':password' :name < :dump_filename");
 }
 
 

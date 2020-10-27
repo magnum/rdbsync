@@ -35,6 +35,7 @@ def ftp_run
     ftp.close
   rescue StandardError => e
     puts "FTP ERROR: #{e.message}"
+    puts "#{e.backtrace.join "\n"}"
   end
 end
 
@@ -44,7 +45,9 @@ def remote_action_url(action)
     ":script_filename?action=#{action}&host=:host&username=:username&password=:password&name=:name",
     CONFIG[:remote][:db]
   )
-  File.join  CONFIG[:remote][:url], path
+  url = File.join  CONFIG[:remote][:url], path
+  #puts url
+  url
 end
 
 
